@@ -8,6 +8,8 @@
         <link rel .. href> - Use this to link .css file to this page. We are using external CSS 
                              Remember: 3 Ways CSS is used = inline, internal, external
     
+        (a).(b)            - shortcut for creating html elements w/css
+
     -->
     <head>
         <meta name ="viewport" content ="width = device-width, initial-scale = 1.0">
@@ -30,6 +32,22 @@
                 <img src="images/rain_cloud2.png" class="weather-icon"> <!-- ADD NEW IMAGES-->
                 <h1 class="temp">22°C</h1>
                 <h2 class="city">New York</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="images/rain_cloud.png">   <!-- ADD HUMIDITY IMAGE-->
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/rain_cloud.png">   <!-- ADD WIND IMAGE-->
+                        <div>
+                            <p class="wind Speed">15km/h</p>
+                            <p>Wind</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>  
     </body>

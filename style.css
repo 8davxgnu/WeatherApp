@@ -102,13 +102,11 @@ body{
 /* SELF TESTING*/
 
 .weather img{
-    width : 300px;
-    height: 300px;
+    width     : 300px;
+    height    : 300px;
     margin-top: 20px;
      
 }
 
-.weather h1{
-    
-    
-}
+
+

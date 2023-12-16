@@ -1,0 +1,9 @@
+Important fixes:
+- Figure out how to place the temperature and city header text more in center, right below the weather image.
+
+
+
+
+Changes for later:
+- improve magnifying glass art 
+- add interactivity to weather app

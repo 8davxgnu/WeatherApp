@@ -2,12 +2,21 @@
 <html>
 
     <!------------------------- HEAD ------------------------------------>
+    <!--
+        ~DC NOTES:
+        <title>            - the webpage title
+        <link rel .. href> - Use this to link .css file to this page. We are using external CSS 
+                             Remember: 3 Ways CSS is used = inline, internal, external
+    
+    -->
     <head>
         <meta name ="viewport" content ="width = device-width, initial-scale = 1.0">
-        <title>Weather App - Easy Tutorials</title> <!-- Webpage title -->
-        <link rel ="stylesheet" href ="style.css">
+        <title>Weather App</title> 
+        <link rel ="stylesheet" href ="style.css"> 
     </head>
     
+
+
 
     <!------------------------- BODY ------------------------------------>
     <body>
@@ -15,9 +24,14 @@
             <div class ="search"> 
                 <input type ="text" placeholder="Enter City Name" 
                 spellcheck="false">
-                <button><img src="images/magnifying glass .png"></button>
+                <button><img src="images/magnifying glass.png"></button>
             </div>
-        </div>
+            <div class ="weather">  
+                <img src="images/rain_cloud2.png" class="weather-icon"> <!-- ADD NEW IMAGES-->
+                <h1 class="temp">22°C</h1>
+                <h2 class="city">New York</h2>
+            </div>
+        </div>  
     </body>
 
 

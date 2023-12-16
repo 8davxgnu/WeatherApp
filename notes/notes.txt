@@ -1,0 +1,23 @@
+Weather Data API:
+
+- Current planned API: AccuWeather [https://developer.accuweather.com/apis]
+
+- API Key: 	'bMByygfch37GcLj98En47ibokp96xLXB'
+
+- Get weather info by searching City name (?)
+
+
+
+
+
+
+
+Ideas:
+- Javascript:
+    - [INTERACTABLE SLIDE BAR / "Wheel"]
+        - Display current weather condition at current time w/image but allow user to 
+          slide the image left/right to view the weather at past and future hours and have
+          image + weather info adjust accordingly.
+        - Add a button that resets the "wheel" back to current condition if not already there
+
+

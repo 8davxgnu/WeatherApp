@@ -99,7 +99,7 @@ body{
 
 
 
-/* SELF TESTING*/
+/* SELF TESTING FOR PLACEHOLDER WEATHER DATA DISPLAY TEST*/
 
 .weather img{
     width     : 300px;
@@ -109,4 +109,8 @@ body{
 }
 
 
-
+.col1 img{
+    width: 100px;
+    height: 100px;
+    margin-right: 50%;
+}

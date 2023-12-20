@@ -1,12 +1,17 @@
 /* 
 ------------------------
-NOTES:
+SYNTAX NOTES:
 
 *      - selector of all unspecified elements and values; unspecified elements inherit these values (?)
 margin - how much space you want on the left/right/top/ bottom of an element (in px)
 
 
------------------------
+
+------------------------
+~ DC NOTES ~
+△ : linking original idea w/more efficient ones 
+□  :
+------------------------
 */ 
 
 *{ 
@@ -28,14 +33,14 @@ body{
 
 
 .card{
-    width: 90%;
-    max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
-    color: #fff;
-    margin: 100px auto 0; /*100px from top, 0px from bottom; left right auto*/
+    width        : 90%;
+    max-width    : 470px;
+    background   : linear-gradient(135deg, #00feba, #5b548a);
+    color        : #fff;
+    margin       : 100px auto 0; /*100px from top, 0px from bottom; left right auto*/
     border-radius: 40px;  /* Round Corners*/
-    padding: 40px 35px;
-    text-align: center; 
+    padding      : 40px 35px;
+    text-align   : center; 
 }
     
 
@@ -53,16 +58,16 @@ body{
 }
 
 .search input{
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    color: #555;
-    padding: 10px 25px; /* TOP+BOT, LEFT+RIGHT */
-    height: 60px;
+    border       : 0;
+    outline      : 0;
+    background   : #ebfffc;
+    color        : #555;
+    padding      : 10px 25px; /* TOP+BOT, LEFT+RIGHT */
+    height       : 60px;
     border-radius: 30px;
-    flex: 1;
-    margin-right: 16px;
-    font-size: 18px;
+    flex         : 1;
+    margin-right : 16px;
+    font-size    : 18px;
 
     /*Self Testing*/
     text-align: center;
@@ -89,28 +94,79 @@ body{
 
 
 
+.weather-icon{
+    /* △ 
+    - notice: we use the 'class' name here which allows direct calling in css. 
+    */
+    width     : 250px;
+    margin-top: 30px; /* margin-top == space above the image from the top*/
+}
+
+
+.weather h1{
+    font-size  : 40px;
+    font-weight: 500;
+    margin-top : -80px;
+}
+
+
+.weather h2{
+    font-size  : 35px;
+    font-weight: 400;
+    margin-top : -10px;
+}
+
+
+.details{ /* this stylizes everything under details: the two "cols" of info on wind + humidity*/
+    /* ~ DC ~ NOTES
+    - justify-content: used for aligning items in flex container
+    https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content 
+    - 
+    */
+    display        : flex;   /* DC: WHAT IS FLEX?? To display columns?*/
+    align-items    : center; 
+    justify-content: space-between;
+    padding        : 0 20px; /* 20px from left and right side*/
+    margin-top     : 25px;
+}
+
+
+.col{ /* More stylization of col texts */
+    display    : flex;
+    align-items: center;
+    text-align : left;
+}
+
+
+.col img{ /* More stylization of col images */
+    width       : 60px;
+    margin-right: 10px;
+}
 
 
 
 
+.humidity, .wind{ /* More stylization of col texts. Specifically for humidity and wind VALUES, not the category names */
+    font-size: 18px;
+}
 
-
-
-
-
+/*-------------------------------------------------------------------------------------*/
 
 /* SELF TESTING FOR PLACEHOLDER WEATHER DATA DISPLAY TEST*/
+/*
 
-.weather img{
+.weather img{ △
     width     : 300px;
     height    : 300px;
     margin-top: 20px;
      
 }
 
-
-.col1 img{
-    width: 100px;
-    height: 100px;
-    margin-right: 50%;
+.col img{
+    width: 78px;
+    height: 78px;
+    
 }
+*/
+
+

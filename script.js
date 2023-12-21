@@ -11,15 +11,15 @@ async function checkWeather(){
     document.querySelector(".city").innerHTML     = data.name;
     /*
     Temperature:
-    
-
+    - DC ~ round to one degree
     */
-    document.querySelector(".temp").innerHTML     = Math.round(data.main.temp)  + "°C"; 
-    document.querySelector(".humidity").innerHTML = main.humidity   + "%";
+    document.querySelector(".temp").innerHTML     = (Math.round(data.main.temp * 10 / 10)).toFixed(1)  + "°C"; 
+    document.querySelector(".humidity").innerHTML = data.main.humidity   + "%";
     document.querySelector(".wind").innerHTML     = data.wind.speed + "km/h";
 
+    
 }
-
+checkWeather();
 
 
 

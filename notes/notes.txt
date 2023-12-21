@@ -1,23 +1,23 @@
-  Weather Data API:
+Weather Data API:
 
 - Current planned API: Openweather 
 
+------------------------------------------------------------------------------------------------
 
-- Other options to try later:
+- Other API to try later:
   - weather.gov
   - accuweather (?)
   - open-meteo
 
-
-
-------------------------------------------------------------------------------------------------
-Add:
-
-
-
 ------------------------------------------------------------------------------------------------
 
-Ideas:
+TODO:
+- update images to match city search results
+- allow use of 'enter' key to work for searchbox [12/21/23]
+
+------------------------------------------------------------------------------------------------
+
+Future Ideas:
 - Javascript:
     - [INTERACTABLE SLIDE BAR / "Wheel"]
         - Display current weather condition at current time w/image but allow user to 

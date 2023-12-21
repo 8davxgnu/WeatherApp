@@ -20,9 +20,16 @@
         <!-- Link external css file -->
         <link rel ="stylesheet" href ="style.css"> 
 
-        <!-- Link external js file -->
-        <script src="script.js"></script>
+        <!-- 
+        - Link external js file 
+        - Remember: behaves just as if it were internal (written within script tag in .html file)
+
+        □: Check bottom of doc. Script tag we use, which uses the user search input, must be placed after the 
+           same html elements that are accessed in that .js script. So it is placed at the end here.
+        -->
         
+        
+    
     </head>
     
     
@@ -61,7 +68,15 @@
     </body>
 
 
+    
 
-
+    <!-- 
+        DC ~  □
+        - Figure out for certain why script needs to be placed here in order for search system to work
+        - (?) https://bobbyhadz.com/blog/javascript-cannot-read-property-click-of-null#:~:text=There%20are%203%20main%20reasons,the%20DOM%20elements%20are%20declared.
+        
+        Does the .js need to placed after html elements for it to access said elements
+    -->
+    <script src="script.js"></script>
 
 </html>

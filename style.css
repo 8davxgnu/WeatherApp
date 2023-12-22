@@ -1,12 +1,19 @@
 /* 
 ------------------------
-SYNTAX NOTES:
+CSS ATTRIBUTE NOTES:
 
-*      - selector of all unspecified elements and values; unspecified elements inherit these values (?)
-margin - how much space you want on the left/right/top/ bottom of an element (in px)
+*       - selector of all unspecified elements and values; unspecified elements inherit these values (?)
+margin  - how much space you want on the left/right/top/ bottom of an element (in px)
+padding -The space ("padding") on inner side. ~ think membrane
 
+-------------------------------------------------------------------------------
+~ DC ~
+ - for padding, if four values are given, it sets padding for the values CW (top,right,bot,left).
+   If only two values given, the first is set fir top+bot, and the second for left+right
+   If three values given, first is set top, second for left and right, third for bot
+   Basically, whatever value is not given is set equal to the padding of the side opposite to it (if given)
 
-
+- setting 'display' to 'none' hides the data. setting to 'block' shows the data 
 ------------------------
 ~ DC NOTES ~
 △ : linking original idea w/more efficient ones 
@@ -36,9 +43,9 @@ body{
     max-width    : 470px;
     background   : linear-gradient(135deg, #00feba, #5b548a);
     color        : #fff;
-    margin       : 100px auto 0; /*100px from top, 0px from bottom; left right auto*/
-    border-radius: 40px;  /* Round Corners*/
-    padding      : 40px 35px;
+    margin       : 50px auto 50px;   /*100px from top, 0px from bottom; left right auto*/
+    border-radius: 40px;             /* Round Corners*/
+    padding      : 40px 35px;   /* 40px from top(and bottom), 35 from left(and right)*/   
     text-align   : center; 
 }
     
@@ -98,7 +105,8 @@ body{
     - notice: we use the 'class' name here which allows direct calling in css. 
     */
     width     : 250px;
-    margin-top: 30px; /* margin-top == space above the image from the top*/
+    margin-top: 0px; /* margin-top == space above the image from the top*/
+    margin-bottom: 40px;
 }
 
 
@@ -147,6 +155,20 @@ body{
 
 .humidity, .wind{ /* More stylization of col texts. Specifically for humidity and wind VALUES, not the category names */
     font-size: 18px;
+}
+
+
+.weather{
+    display:none; /* Card initially has no info. js file weather search function changes info display */
+}
+
+
+.error{
+    text-align : left;
+    margin-left: 10px;
+    font-size  : 14px;
+    margin-top : 10px;
+    display    : none; /* Hide display until an invalid search request is input*/
 }
 
 /*-------------------------------------------------------------------------------------*/

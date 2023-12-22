@@ -11,11 +11,6 @@ Weather Data API:
 
 ------------------------------------------------------------------------------------------------
 
-TODO:
-- update images to match city search results
-- allow use of 'enter' key to work for searchbox [12/21/23]
-
-------------------------------------------------------------------------------------------------
 
 Future Ideas:
 - Javascript:

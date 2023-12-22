@@ -1,9 +1,12 @@
-Important fixes:
-- Figure out how to place the temperature and city header text more in center, right below the weather image.
+IMPORTANT TODO:
+- Figure out how to place the temperature and city header text more in center,
+  right below the weather image. [Sol: css margin w/negative values]
 
 
 
 
-Changes for later:
-- improve magnifying glass art 
-- add interactivity to weather app
+TODO:
+- improve magnifying glass art                                                   ☑
+- add system to update images to match city search results                       ☑
+- allow use of 'enter' key to work for searchbox [12/21/23]                      ☐
+- Add images for snow, mist, drizzle                                             ☐

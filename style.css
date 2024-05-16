@@ -8,10 +8,10 @@ padding -The space ("padding") on inner side. ~ think membrane
 
 -------------------------------------------------------------------------------
 ~ DC ~
- - for padding, if four values are given, it sets padding for the values CW (top,right,bot,left).
-   If only two values given, the first is set fir top+bot, and the second for left+right
-   If three values given, first is set top, second for left and right, third for bot
-   Basically, whatever value is not given is set equal to the padding of the side opposite to it (if given)
+-   for padding, if four values are given, it sets padding for the values CW (top,right,bot,left).
+    If only two values given, the first is set fir top+bot, and the second for left+right
+    If three values given, first is set top, second for left and right, third for bot
+    Basically, whatever value is not given is set equal to the padding of the side opposite to it (if given)
 
 - setting 'display' to 'none' hides the data. setting to 'block' shows the data 
 ------------------------
@@ -180,7 +180,6 @@ body{
     width     : 300px;
     height    : 300px;
     margin-top: 20px;
-     
 }
 
 .col img{
